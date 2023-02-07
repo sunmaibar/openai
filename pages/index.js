@@ -29,7 +29,10 @@ export default function MyPage() {
   return (
     <div className='container'>
       <h1>大仁哥智能AI請輸入隨意想問的事情</h1>
-      <h5>譬如：台灣的15個地名，台鐵的列車種類</h5>
+      <h5>
+        <span style={{ color: 'red' }}>僅限英文!!!</span>
+        譬如：台灣的15個地名，台鐵的列車種類
+      </h5>
       <form className='our-form' onSubmit={handleSubmit}>
         <input className='prompt-field' type='text' onChange={handleChange} />
         <button className='prompt-button'>Go!</button>
